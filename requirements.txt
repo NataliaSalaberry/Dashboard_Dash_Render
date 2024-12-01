@@ -1,0 +1,7 @@
+plotly>= 5.24.1
+dash>= 2.18.2
+yfinance>=0.2.49
+matplotlib>=3.9.2
+numpy>=2.0.2
+pandas>=2.2.3
+
