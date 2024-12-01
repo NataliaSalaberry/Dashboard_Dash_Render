@@ -2,19 +2,6 @@
 # MÓDULO 10 INTERPRETACIÓN Y VISUALIZACIÓN DE DATOS FINANCIEROS
 # PROFESORA NATALIA SALABERRY
 
-#Recuerde instalar los módulos desde la temrinal antes de ejecutar las librerías 
-# si no lo hizo antes
-
-# pip intall datetime
-# pip intall yfinance
-# pip intall pandas
-# pip intall matplotlib
-# pip intall ploty
-# pip intall dash
-# pip intall yfinance
-
-
-
 #obtención de datos
 from datetime import date, timedelta
 
@@ -125,20 +112,4 @@ app.layout =html.Div(children=[
 if __name__ == '__main__':
     app.run_server(debug=False)
 
-#IMPORTANTE: UNA VEZ QUE CORRIÓ TODO EL CÓDIGO, GUARDE EL SCRIPT (app.py) EN LA 
-# CARPETA QUE FIGURA EN LA TERMINAL (para eso, vaya al menu de arriba,
-# en los tres puntitos-> New Temrinal): por ejemplo, en mi caso: C:\Users\LicNS
-# 
-# Una vez guardado, ejecutar la app en la terminal anteponiendo python app.py
-# 
-# en la ejecucción, observe que:
-# 1 - Dash is running on http://127.0.0.1:8050/  Click + ctrl en el link y se le abre web la app
-# lo que esta sucediendo es que ahora su PC (a través de su IP) esta haciendo de servidor
-# Mientras no cierre VS Code (ni apague su PC) siempre estará online el tablero
-# 2 - Serving Flask app 'app': Dash esta utilizando Flask para creación de la App. 
-# Flask, es muy utilizado para crear App. Acerca de Flask: https://flask.palletsprojects.com/en/stable/
 
-# 3- si modifica el código por ejemplo agregando otro gráfico, etc, luego recuerde Save As y reemplaza.
-# al hacer eso observe en la terminal que se vuelve a ejecutar automáticamente
-# porque en realidad esta corriendo continuamente (esta On la App)
-# si luego va a la web se actualiza automáticamente el tablero.
