@@ -104,7 +104,8 @@ import dash
 
 from dash import Dash, dcc, html
 
-app = Dash()
+app = dash.Dash(__name__)
+server = app.server
 
 app.layout =html.Div(children=[
     # Elementos en la parte superior de la página
@@ -122,7 +123,7 @@ app.layout =html.Div(children=[
     ])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=False)
 
 #IMPORTANTE: UNA VEZ QUE CORRIÓ TODO EL CÓDIGO, GUARDE EL SCRIPT (app.py) EN LA 
 # CARPETA QUE FIGURA EN LA TERMINAL (para eso, vaya al menu de arriba,
