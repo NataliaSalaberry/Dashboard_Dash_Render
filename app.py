@@ -1,13 +1,12 @@
-# M71V MAESTRÍA EN GESTIÓN Y ANÁLISIS DE DATOS FIANCIEROS
-# MÓDULO 10 INTERPRETACIÓN Y VISUALIZACIÓN DE DATOS FINANCIEROS
-# PROFESORA NATALIA SALABERRY
+# EJEMPLO DE DASHBOARD
+# NATALIA SALABERRY
 
 #obtención de datos
 from datetime import date, timedelta
 
 #ajustar para obtener un mes
-fecha_fin='2023-09-01' #str(date.today()-timedelta(10))
-fecha_ini='2023-07-01' #str(date.today()-timedelta(41))
+fecha_fin='2023-09-01' 
+fecha_ini='2023-07-01' 
 
 import yfinance as yf
 import pandas as pd
@@ -106,7 +105,6 @@ app.layout =html.Div(children=[
             figure=fig1
         ),
     ]),
-    # así va generando todos los div según los diferentes tipos, como en los ejemplos de clase
     ])
 
 if __name__ == '__main__':
