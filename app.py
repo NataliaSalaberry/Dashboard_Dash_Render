@@ -98,7 +98,7 @@ app.layout =html.Div(children=[
     html.Div([
         html.H1(children='Tablero analítico', style={'textAlign': 'center'}),
 
-        html.Div(children='''Análisis de la cotización de Google Julio-Agosto 2024''', style={'textAlign': 'center','color': 'black', "font-weight": "bold", 'fontSize': 20}),
+        html.Div(children='''Análisis de la cotización de Google Julio-Agosto 2023''', style={'textAlign': 'center','color': 'black', "font-weight": "bold", 'fontSize': 20}),
        # primer gráfico
         dcc.Graph(
             id='graph1',
